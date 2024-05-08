@@ -13,6 +13,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('homepage');
-})->name('homepage');
+// Va bene se non ho nessuna voce senza /?
+
+Route::get('/characters', function () {
+    return view('characters');
+})->name('characters');
+
+Route::get('/comics', function () {
+    return view('comics');
+})->name('comics');
+
+Route::get('/movies', function () {
+    return view('movies');
+})->name('movies');
+
+Route::get('/tv', function () {
+    return view('tv');
+})->name('tv');
+
+Route::get('/collectibles', function () {
+    return view('collectibles');
+})->name('collectibles');
